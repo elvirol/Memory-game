@@ -1,0 +1,67 @@
+.formulaire {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+       
+    
+        form {
+           
+            width: 60%;
+            height: 70%;
+            border-radius: 10rem;
+            box-shadow:0px 1px 20px white;
+           padding: 1rem;
+        
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+        label {
+            font-size: 3em;
+            opacity: 1;
+            color: white;
+        }
+        input {
+            width: 80%;
+            padding: 1rem;
+            border: none;
+            border-bottom: solid 0.5px rgba(255, 255, 255, 0.281);
+            margin: 1rem auto;
+            font-size: 2rem;
+            text-align: center;  
+            background: none;
+            color: $color2;
+            
+        }
+    }
+    
+    .ready {
+        margin-top: 1rem;
+        cursor: crosshair;
+        padding: 1rem 3rem;
+        background: rgba(255, 255, 255, 0.116); 
+        
+    }
+    .ready.sub {
+        background: linear-gradient(50deg, rgba(255, 255, 255, 0), #09fbba5d, $color1);
+    
+    }
+    span {
+        color: red;
+        font-size: 2rem;
+    }
+        }
+    }
+    
+    

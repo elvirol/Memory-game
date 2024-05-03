@@ -1,0 +1,82 @@
+.jeux {
+    height: 100vh;
+    @include center;
+
+    .board-game {
+        width: 80%;
+        @include center ;
+        
+    }
+    
+    .container {
+        width: 80%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        background: $color2;
+        padding: 5rem 7rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+    }
+
+    .scort {
+        @include center;
+        margin-top: 2rem;
+
+    span {
+        color: white;
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+         }
+
+    .game {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        transform-style: preserve-3d;
+        perspective: 500px;
+    }
+
+   
+
+   .items {
+       position: relative;
+       width: 7rem;
+       height: 7rem;
+       @include center;
+       font-size: 3rem;
+       background: rgb(255, 255, 255);
+       transform: rotateY(180deg);
+       transition: 0.25s;
+       
+   }
+}
+.items.boxOpen {
+    transform: rotateY(0deg);
+}
+
+   .items::after {
+       content: "";
+       position: absolute;
+       inset: 0;
+       background: $color1;
+       transition: 0.25s;
+       transform: rotateY(0deg);
+       backface-visibility: hidden;
+   }
+         .boxOpen:after,
+        .boxMatch:after {
+             transform: rotateY(180deg);
+         }
+ 

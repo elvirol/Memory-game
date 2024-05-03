@@ -1,0 +1,29 @@
+.home {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40% 40% 20%;
+    justify-items: center;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+   .exemple {
+    @include center;
+    
+    img {
+      width:  70%;   
+     }
+    }
+
+    .ready {
+        margin-top: 1rem;
+        cursor: crosshair;
+        padding: 1rem 3rem;
+        background: rgba(255, 255, 255, 0.116); 
+    
+        &:hover {
+            background: linear-gradient(50deg,rgba(255, 0, 0, 0.486), rgba(255, 255, 255, 0), #09fbba5d, $color1);
+        }
+    }
+}

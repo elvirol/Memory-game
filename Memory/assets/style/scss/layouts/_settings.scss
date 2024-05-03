@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "pixels";
+    src: url(/assets/style/fronts/PixelifySans-Regular.ttf);
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$font1: pixels;
+$color1:#09fbba;
+$color2: #02bb8a;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $color1;
+    font-family: $font1, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url(/assets/style/img/espace.png)center/cover fixed;
+    background-color: #033e65d3;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+    
+   
+   
+}
+
+p {
+     width: 80%;
+     margin: 0 auto;
+     text-align: center;
+     font-size: 2rem;
+     font-weight: 600;
+     color: $color2;
+ }
+
+ a {
+    text-decoration: none;
+    color: black;
+    cursor: crosshair;
+}
+
+a:hover {
+    color: rgb(233, 233, 233);
+}
+
+button {
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    cursor: crosshair;
+
+    a {
+        color: $color1;
+    }
+    
+
+    &:hover {
+        scale: 1.1;
+        background: linear-gradient(50deg, rgba(255, 255, 255, 0), #09fbba5d, $color1);
+        
+    }
+}
+

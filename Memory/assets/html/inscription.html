@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style/scss/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="side-bar">
+      <div class="toggle-btn" id="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="./signin.html">Sign in</a></li>
+      </ul>
+    </div>
+    <section class="formulaire content">
+      <div class="content">
+        <h1>formulaire</h1>
+      </div>
+
+      <form action="" method="post" id="contactForm">
+        <div>
+          <label for="pseudo">Pseudo</label>
+          <input type="text" id="pseudo" />
+          <span id="errorPseudo"></span>
+        </div>
+
+        <div>
+          <label for="passWord">Password</label>
+          <input type="passWord" id="passWord" />
+          <p id="progress-bar"></p>
+          <span id="errorPassWord"></span>
+        </div>
+
+        <div>
+          <label for="email">mail</label>
+          <input type="text" id="email" />
+          <span id="errorMail"></span>
+        </div>
+        <button class="ready">READY</button>
+      </form>
+    </section>
+    <script src="/assets/js/inscription.js"></script>
+  </body>
+</html>
