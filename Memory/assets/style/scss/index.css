@@ -13,7 +13,7 @@
 
 body {
   height: 100vh;
-  background: url(/assets/style/img/espace.png) center/cover fixed;
+  background: url(../img/espace.png) center/cover;
   background-color: rgba(3, 62, 101, 0.8274509804);
 }
 

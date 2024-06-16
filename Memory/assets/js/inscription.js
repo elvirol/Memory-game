@@ -10,7 +10,7 @@ function validateEmail(email) {
   return emailPattern.test(email);
 }
 function validatePassword(password) {
-  const passwordPattern = /^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$/;
+  const passwordPattern =  /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
   return passwordPattern.test(password);
 }
 
